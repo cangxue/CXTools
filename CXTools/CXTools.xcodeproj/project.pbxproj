@@ -13,6 +13,7 @@
 		D1CEECA61DC9E6F700412F07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CEECA41DC9E6F700412F07 /* Main.storyboard */; };
 		D1CEECA81DC9E6F700412F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CEECA71DC9E6F700412F07 /* Assets.xcassets */; };
 		D1CEECAB1DC9E6F700412F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CEECA91DC9E6F700412F07 /* LaunchScreen.storyboard */; };
+		D1CEECB51DC9E80B00412F07 /* CXTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CEECB41DC9E80B00412F07 /* CXTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D1CEECA71DC9E6F700412F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1CEECAA1DC9E6F700412F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1CEECAC1DC9E6F700412F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CEECB31DC9E80B00412F07 /* CXTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXTools.h; sourceTree = "<group>"; };
+		D1CEECB41DC9E80B00412F07 /* CXTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		D1CEEC9A1DC9E6F700412F07 /* CXTools */ = {
 			isa = PBXGroup;
 			children = (
+				D1CEECB21DC9E7E200412F07 /* CXTools */,
 				D1CEEC9E1DC9E6F700412F07 /* AppDelegate.h */,
 				D1CEEC9F1DC9E6F700412F07 /* AppDelegate.m */,
 				D1CEECA11DC9E6F700412F07 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				D1CEEC9C1DC9E6F700412F07 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1CEECB21DC9E7E200412F07 /* CXTools */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEECB31DC9E80B00412F07 /* CXTools.h */,
+				D1CEECB41DC9E80B00412F07 /* CXTools.m */,
+			);
+			path = CXTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CEECB51DC9E80B00412F07 /* CXTools.m in Sources */,
 				D1CEECA31DC9E6F700412F07 /* ViewController.m in Sources */,
 				D1CEECA01DC9E6F700412F07 /* AppDelegate.m in Sources */,
 				D1CEEC9D1DC9E6F700412F07 /* main.m in Sources */,
