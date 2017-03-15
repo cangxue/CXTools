@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12DD2901E78EE94004D7E61 /* UIColor+CXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D12DD28D1E78EE94004D7E61 /* UIColor+CXColor.m */; };
+		D12DD2911E78EE94004D7E61 /* UILabel+CXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D12DD28F1E78EE94004D7E61 /* UILabel+CXLabel.m */; };
 		D19738531DCB2B540028890F /* CXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19738521DCB2B540028890F /* CXTools.swift */; };
 		D1CEEC9D1DC9E6F700412F07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CEEC9C1DC9E6F700412F07 /* main.m */; };
 		D1CEECA01DC9E6F700412F07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CEEC9F1DC9E6F700412F07 /* AppDelegate.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D12DD28C1E78EE94004D7E61 /* UIColor+CXColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CXColor.h"; sourceTree = "<group>"; };
+		D12DD28D1E78EE94004D7E61 /* UIColor+CXColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CXColor.m"; sourceTree = "<group>"; };
+		D12DD28E1E78EE94004D7E61 /* UILabel+CXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CXLabel.h"; sourceTree = "<group>"; };
+		D12DD28F1E78EE94004D7E61 /* UILabel+CXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CXLabel.m"; sourceTree = "<group>"; };
 		D19738511DCB2B540028890F /* CXTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CXTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		D19738521DCB2B540028890F /* CXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXTools.swift; sourceTree = "<group>"; };
 		D1CEEC981DC9E6F700412F07 /* CXTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D12DD28B1E78EE94004D7E61 /* CXExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D12DD28C1E78EE94004D7E61 /* UIColor+CXColor.h */,
+				D12DD28D1E78EE94004D7E61 /* UIColor+CXColor.m */,
+				D12DD28E1E78EE94004D7E61 /* UILabel+CXLabel.h */,
+				D12DD28F1E78EE94004D7E61 /* UILabel+CXLabel.m */,
+			);
+			path = CXExtensions;
+			sourceTree = "<group>";
+		};
 		D1CEEC8F1DC9E6F700412F07 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +81,7 @@
 		D1CEEC9A1DC9E6F700412F07 /* CXTools */ = {
 			isa = PBXGroup;
 			children = (
+				D12DD28B1E78EE94004D7E61 /* CXExtensions */,
 				D1CEECB21DC9E7E200412F07 /* CXTools */,
 				D1CEEC9E1DC9E6F700412F07 /* AppDelegate.h */,
 				D1CEEC9F1DC9E6F700412F07 /* AppDelegate.m */,
@@ -172,7 +190,9 @@
 				D1CEECB51DC9E80B00412F07 /* CXTools.m in Sources */,
 				D1CEECA31DC9E6F700412F07 /* ViewController.m in Sources */,
 				D1CEECA01DC9E6F700412F07 /* AppDelegate.m in Sources */,
+				D12DD2901E78EE94004D7E61 /* UIColor+CXColor.m in Sources */,
 				D1CEEC9D1DC9E6F700412F07 /* main.m in Sources */,
+				D12DD2911E78EE94004D7E61 /* UILabel+CXLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
