@@ -24,6 +24,8 @@
 		D12DD28D1E78EE94004D7E61 /* UIColor+CXColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CXColor.m"; sourceTree = "<group>"; };
 		D12DD28E1E78EE94004D7E61 /* UILabel+CXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CXLabel.h"; sourceTree = "<group>"; };
 		D12DD28F1E78EE94004D7E61 /* UILabel+CXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CXLabel.m"; sourceTree = "<group>"; };
+		D12DD2921E78EF3B004D7E61 /* CXPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXPrefixHeader.pch; sourceTree = "<group>"; };
+		D12DD29C1E78F151004D7E61 /* CXHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXHeader.h; sourceTree = "<group>"; };
 		D19738511DCB2B540028890F /* CXTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CXTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		D19738521DCB2B540028890F /* CXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXTools.swift; sourceTree = "<group>"; };
 		D1CEEC981DC9E6F700412F07 /* CXTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,8 @@
 				D1CEECA11DC9E6F700412F07 /* ViewController.h */,
 				D1CEECA21DC9E6F700412F07 /* ViewController.m */,
 				D1CEECA41DC9E6F700412F07 /* Main.storyboard */,
+				D12DD2921E78EF3B004D7E61 /* CXPrefixHeader.pch */,
+				D12DD29C1E78F151004D7E61 /* CXHeader.h */,
 				D1CEECA71DC9E6F700412F07 /* Assets.xcassets */,
 				D1CEECA91DC9E6F700412F07 /* LaunchScreen.storyboard */,
 				D1CEECAC1DC9E6F700412F07 /* Info.plist */,
@@ -305,6 +309,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/xiaoma/Desktop/CX.git/CXTools/CXTools/CXTools/CXPrefixHeader.pch;
 				INFOPLIST_FILE = CXTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CX.CXTools;
@@ -320,6 +326,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/xiaoma/Desktop/CX.git/CXTools/CXTools/CXTools/CXPrefixHeader.pch;
 				INFOPLIST_FILE = CXTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CX.CXTools;

@@ -12,8 +12,15 @@
 
 /*
  * 计算labeltext的size
+ * 无行间距
  */
 + (CGSize)cx_labelSizeForText:(NSString *)text font:(CGFloat)fontSize width:(CGFloat)width;
+
+/*
+ * 计算labeltext的size
+ * 有间距
+ */
++ (CGSize)cx_labelSizeForText:(NSString *)text font:(CGFloat)fontSize width:(CGFloat)width lineSpacing:(CGFloat)lineSpacing;
 
 /*
  * 设置行间距
