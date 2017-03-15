@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+/** 倒计时方法回调 */
+typedef void(^timerRuning)(NSString *runingTime);
+typedef void(^timerInvalid)(BOOL isInvalid);
+
 @interface CXTools : NSObject
+
+
+/**
+ * 倒计时
+ * @param timercount    倒计时总时间
+ * @param timerRuning    当前运行的时间
+ * @param timerInvalid  倒计时是否结束
+ */
++ (void)setTimerWithTimecount:(int)timercount timerRuning:(timerRuning)timerRuning tiemrInvalid:(timerInvalid)timerInvalid;
 
 @end

@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CXTools.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *showLabel;
 
 @end
 
@@ -16,12 +19,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 倒计时
+- (void)getCountdownWithTimecount {
+    [CXTools setTimerWithTimecount:60 timerRuning:^(NSString *runingTime) {
+        
+         self.showLabel.text = [NSString stringWithFormat:@"倒计时%@S",runingTime];
+    } tiemrInvalid:^(BOOL isInvalid) {
+        self.showLabel.text = @"倒计时结束";
+    }];
+}
+
+- (IBAction)clickAction:(id)sender {
+    
+    [self getCountdownWithTimecount];
 }
 
 @end
