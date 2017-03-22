@@ -57,5 +57,16 @@
     return attributeStr;
 }
 
+/*
+ * 获取字符串行数
+ */
++ (int)cx_labelGetRowForText:(NSString *)text font:(CGFloat)fontSize width:(CGFloat)width lineSpacing:(CGFloat)lineSpacing {
+    int row;
+    CGFloat height = [self cx_labelSizeForText:text font:15 width:width lineSpacing:lineSpacing].height;
+    
+    row = floor((height + lineSpacing)/(fontSize + 3 + lineSpacing)) + 1;
+    
+    return row;
+}
 
 @end

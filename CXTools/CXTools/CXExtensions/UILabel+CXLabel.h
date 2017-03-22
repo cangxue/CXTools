@@ -27,5 +27,10 @@
  */
 + (NSMutableAttributedString *)cx_labelAttributedString:(NSString *)text lineSpacing:(CGFloat)spacing;
 
+/*
+ * 获取字符串行数
+ */
++ (int)cx_labelGetRowForText:(NSString *)text font:(CGFloat)fontSize width:(CGFloat)width lineSpacing:(CGFloat)lineSpacing;
+
 
 @end
